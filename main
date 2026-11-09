@@ -1,0 +1,15 @@
+
+koraci prije ovoga su da moras da skines policy_templates i extractujes fajlove .
+onda udjes u windows/admx
+kopiras chrome.admx i google.admx unutar C:/Windows/PolicyDefinitions.
+otvoriti windows/admx/en-US i kopirati opet oba fajla u C:/Windows/PolicyDefinitions/en-US 
+Ovo se radi da bi mogao google chrome da se vidi na mmc-u...
+
+prvo kliknuti windows+R 
+upisati mmc 
+(dodavanje polise za korisnika) - File onda Add snap in (tu odabrati korisnika i polisu koja treba ,,Group Policy Objects,,) 
+otvori se mmc sa polisom za block downloada 
+unutar local computer ima andjelina privacy 
+Administrative Template/Google/GoogleChrome - naci Allow download restrictions (Enabled - ne moze nista da se downloaduje) 
+not configured - na default . Trenutno je na enabled da ne bi mogla bilo sta da downloaduje. 
+ako treba sto onda udjem ovjde i podesim.
